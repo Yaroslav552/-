@@ -1,6 +1,6 @@
-name = 'Топинамбур'
-print(name [0])
-print(name [-1])
-print(name [5:])
-print(name [::-1])
-print (name [1:10:2])
+
+Number_of_completed_homework_assignments = "12"
+Number_of_hours_spent = "1.5"
+Course_title = "Python"
+Time_for_one_task = "0.125"
+print("Курс",Course_title,"всего задач",Number_of_completed_homework_assignments,"затрачено часов",Number_of_hours_spent,"среднее время выполнения",Time_for_one_task,"часа")
