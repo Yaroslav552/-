@@ -1,8 +1,7 @@
-name = "Yaroslav"
-print(name)
-age = 21
-print(age)
-new_age = (age + 5)
-print(new_age)
-is_student = True
-print(is_student)
+my_string = input('Здраствуйте, как вас зовут? ')
+print(len(my_string))
+print(my_string.upper())
+print(my_string.lower())
+print(my_string.replace(' ', ''))
+print(my_string[0:1])
+print(my_string[-1:10])
