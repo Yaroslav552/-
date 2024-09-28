@@ -1,18 +1,14 @@
-my_dict = {'Yaroslav': 2002, 'Anton': 2003, 'Andrey': 1997}
-print(my_dict)
-print(my_dict['Yaroslav'])
-print(my_dict.get('Anna'))
-my_dict.update({'Yarik': 2004,
-                'Slava': 2008})
-print(my_dict['Slava'])
-del my_dict['Slava']
-print(my_dict)
-my_set = [1, 2, 3, 4, 1, 'apple', True]
-my_set = set(my_set)
-print(my_set)
-print(my_set.add(5))
-print(my_set.add('orange'))
-print(my_set)
-print(my_set.discard('apple'))
-print(my_set)
 
+grades = [[5, 3, 3, 5, 4], [2, 2, 2, 3], [4, 5, 5, 2], [4, 4, 3], [5, 5, 5, 4, 5]]
+students = {'Johnny', 'Bilbo', 'Steve', 'Khendrik', 'Aaron'}
+pystoi_slovar = {}
+names = list(students)
+names.sort()
+print(names[0])
+pystoi_slovar.update({names[0]:sum(grades[0])/len(grades[0]),
+                      names[1]:sum(grades[1])/len(grades[1]),
+                      names[2]: sum(grades[2]) / len(grades[2]),
+                      names[3]: sum(grades[3]) / len(grades[3]),
+                      names[4]: sum(grades[4]) / len(grades[4])
+                      })
+print(pystoi_slovar)
