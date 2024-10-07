@@ -1,20 +1,27 @@
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
-primes = []
-not_primes = []
-for i in numbers:
-    if i < 2:
-        not_primes.append(i)
-        continue
+def get_matrix(n, m, value):
+    matrix = []
+    for i in range(n):
+        matrix.append([])
+        for j in range(m):
+            matrix[i].append(value)
+    return matrix
 
-    is_prime = True
-    for j in range(2, int(i ** 0.5) + 1):
-        if i % j == 0:
-            is_prime = False
-            break
+n = int(input('Размеры строк: '))
+m = int(input('Количество столбцов: '))
+value = input('Значения: ')
+print('' * m)
+matrix = get_matrix(n, m, value)
+if n <= 0:
+    print("Матрица пуста, задано неверное количество строк:", n)
+elif m <=0:
+    print("Матрица пуста, задано неверное количество столбцов:" ,m)
+    for i in matrix:
+        print()
+result1 = get_matrix(2, 2, 10)
+result2 = get_matrix(3, 5, 42)
+result3 = get_matrix(4, 2, 13)
+print(result1)
+print(result2)
+print(result3)
 
-    if is_prime:
-        primes.append(i)
-    else:
-        not_primes.append(i)
-print(f'Простые числа: {primes}')
-print(f'Непростые числа: {not_primes}')
+
